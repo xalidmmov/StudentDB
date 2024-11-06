@@ -1,0 +1,31 @@
+create database BP215
+use BP215
+create table Students(
+[Name] nvarchar(50),
+Surname nvarchar(50),
+Age int,
+AvgPoint decimal(5,2)
+)
+INSERT INTO Students (Name, Surname, Age, AvgPoint)
+VALUES 
+    ('Asi','Rehimli',19,65.90),
+    ('Rafa', 'Silva', 20, 55.00),
+    ('Ciro', 'Immobile', 22, 48.00),
+    ('Victor', 'Osimhen', 19, 72.50),
+    ('Ricardo', 'Quaresma', 21, 85.00),
+    ('Mario', 'Gomez', 23, 45.00),
+    ('Adem', 'Ljajic', 20, 91.00),
+    ('Shinji', 'Kagawa', 24, 53.50),
+    ('Anderson', 'Talisca', 25, 78.00),
+    ('Oguzhan', 'Ozyakup', 20, 65.00),
+    ('Tolga', 'Zengin', 22, 59.00);
+
+	select *from Students 
+	where AvgPoint>51
+
+
+	select *from Students
+	WHERE AvgPoint>51 AND AvgPoint<91
+
+	select *from Students
+	where [Name] like 'A%i';
